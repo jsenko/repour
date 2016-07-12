@@ -1,4 +1,12 @@
+// Build a HTML version using scripts/make-readme.sh
+
 = Repour - Archival Code Service
+// Variable Definitions
+// See http://www.python.org/dev/peps/pep-0440
+// :repourVersion: 0.10.0-dev0
+// This is replaced by the current branch/tag and commit ID when HTML version is built.
+:repourRevision: ?
+:buildTime: ?
 
 Repour archives source code from many untrusted origins into trusted git repositories. It supports SCMs like link:https://git-scm.com/[git], link:https://www.mercurial-scm.org/[hg], and link:https://subversion.apache.org/[svn], as well as archive formats link:http://www.libarchive.org/[like tar and zip]. Tools like link:https://github.com/release-engineering/pom-manipulation-ext[PME] can optionally be applied as ``adjust``ments, and the results archived alongside the unmodified sources.
 
@@ -705,3 +713,6 @@ GitLab integration tests will be executed using the local Docker server. To run 
 == License
 
 The content of this repository is released under the ASL 2.0, as provided in the LICENSE file. See the NOTICE file for the copyright statement and a list of contributors. By submitting a "pull request" or otherwise contributing to this repository, you agree to license your contribution under the license identified above.
+
+
+_Built from revision {repourRevision} on {buildTime}_
